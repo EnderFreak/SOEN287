@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hogwarts Application Form</title>
+</head>
+
+<body>
+<!-- Logo -->
+<table width="0%" border="0">
+  <tr>
+    <td><th>Hogwarts School of Witchcraft and Wizardry</th></td>
+    <td>
+		<a href= "http://imgur.com/gallery/oMH5eMU">
+		<img src="C:\Users\k_joyejob\Desktop\vershna\Hogwarts.jpg" alt="" width = 100px />
+		</a></td>
+  </tr>
+</table> 
+
+
+<form id="form1" name="form1" method="post" action="page.html">
+<fieldset>
+  <legend>Wizard / Witch Personal Information</legend>
+    <label></label>
+    <p> <!-- First name field -->
+      <label>First Name
+      <input type="text" name="firstName" id="firstName" />
+      </label>
+	</p>
+    <p> <!-- Family name field -->
+      <label>Family Name
+      <input type="text" name="familyName" id="familyName" />
+      </label>
+    </p>
+    <p>Gender: <!-- Gender -->
+      <label>
+      <input type="radio" name="radio" id="female" value="female" />
+      Female</label>
+      <label>
+      <input type="radio" name="radio" id="male" value="male" />
+      Male</label>
+    </p>
+    <p>
+      <label>What house are you from?
+      <select name="schoolHouse" id="schoolHouse">
+      	<option value="Griffindor">Griffindor</option>
+		<option value="Slytherin">Slytherin</option>
+		<option value="Ravenclaw">Ravenclaw</option>
+		<option value="Hufflepuff">Hufflepuff</option>
+      </select>
+      </label>
+    </p>
+    <p> <!-- Email -->
+    	<label> Email
+       	<input type="email" name="email"/>
+      </label>
+    </p>
+</fieldset>
+<!-- Second part -->
+<fieldset>
+<legend>Survey Questions</legend>
+<p>
+  What spells do you like the most? (Pick as many as apply)<br/>
+  
+  <input name="expelliarmus" type="checkbox" value="expelliarmus"/>
+  Expelliarmus
+  <input name="sectumsempra" type="checkbox" value="sectumsempra"/>
+  Sectum Sempra
+  <input name="avadakedavra" type="checkbox" value="avadakedavra"/>
+  Avada Kedavra<br/>
+  <input name="blues" type="checkbox" value="hiphoprap"/>
+  Hip Hop/Rap
+  <input name="blues" type="checkbox" value="pop"/>
+  Pop (Popular Music)<br/>
+  <input name="blues" type="checkbox" value="other"/>
+  Other</p>
+
+<p>List your 3 favorite artists/bands:<br/>
+
+  <input type="text" name="artist1" id="artist1" />
+  <input type="text" name="artist2" id="artist2" />
+  <input type="text" name="artist3" id="artist3" />
+ 
+</p>
+
+<p>If your were to win tickets which show would you like 2 tickets to?<br/>
+  <label>
+    <input type="radio" name="radio" id="brit" value="brit" />
+      BRIT FLOYD(March 24,2016)</label>
+      <label>
+      <input type="radio" name="radio" id="iron" value="iron" />
+      IRON MAIDEN(April 1,2016)</label>
+      <label>
+      <input type="radio" name="radio" id="janet" value="janet" />
+      JANET JACKSON(June 17,2016)</label>
+      <label>
+      <input type="radio" name="radio" id="adele" value="adele" />
+      ADELE(September 30,2016)</label>
+</p>
+</fieldset>
+</form>
+
+<p><br/>
+  Thank you for taking the time to fill our survey!</p>
+<p>  
+  <input name="submit" type="button" value="Submit" />
+  <input name="reset" type="button" value="Reset" />
+</p>
+</body>
+</html>

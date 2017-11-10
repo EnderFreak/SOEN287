@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A1Q4Data.xml - XML with data
+	 Course: SOEN 287/Fall 2014
+	 Assignment 1
+	 Question 4 (one possible solution)
+	 Written by: Nancy Acemian
+	 -->
+<courses>
+	<course>
+		<courseCode>COMP</courseCode>
+		<courseNumber>228</courseNumber>
+		<term>Fall</term>
+		<year>2014</year>
+		<instructor></instructor>
+		<classroom></classroom>
+		<tutorials>
+			<tutSection>UA</tutSection>
+			<tutorName>Tutor A</tutorName>
+			<day>Monday</day>
+			<startingTime>14:45</startingTime>
+			<endingTime>16:25</endingTime>
+			<room>H-544</room>
+		</tutorials>
+		<tutorials>
+			<tutSection>UB</tutSection>
+			<tutorName>Tutor B</tutorName>
+			<day>Wednesday</day>
+			<startingTime>14:45</startingTime>
+			<endingTime>16:25</endingTime>
+			<room>H-631</room>
+		</tutorials>
+	</course>
+	<course>
+		<courseCode>SOEN</courseCode>
+		<courseNumber>287</courseNumber>
+		<term>Fall</term>
+		<year>2014</year>
+		<instructor>N. Acemian</instructor>
+		<classroom>H-401</classroom>
+		<tutorials>
+			<tutSection>QA</tutSection>
+			<tutorName>Jing Li</tutorName>
+			<day>Tuesday</day>
+			<startingTime>10:15</startingTime>
+			<endingTime>11:55</endingTime>
+			<room>H-562</room>
+		</tutorials>
+		<tutorials>
+			<tutSection>QB</tutSection>
+			<tutorName>Jing Li</tutorName>
+			<day>Thursday</day>
+			<startingTime>18:15</startingTime>
+			<endingTime>19:55</endingTime>
+			<room>H-562</room>
+		</tutorials>
+	</course>
+	<course>
+		<courseCode>COMP</courseCode>
+		<courseNumber>248</courseNumber>
+		<term>Fall</term>
+		<year>2014</year>
+		<instructor>N. Acemian</instructor>
+		<classroom>FG-B050</classroom>
+		<tutorials>
+			<tutSection>RA</tutSection>
+			<tutorName>Tutor A</tutorName>
+			<day>Friday</day>
+			<startingTime>8:45</startingTime>
+			<endingTime>10:25</endingTime>
+			<room>H-917</room>
+		</tutorials>
+		<tutorials>
+			<tutSection>RB</tutSection>
+			<tutorName>Tutor B</tutorName>
+			<day>Monday</day>
+			<startingTime>10:15</startingTime>
+			<endingTime>11:55</endingTime>
+			<room>H-917</room>
+		</tutorials>
+		<tutorials>
+			<tutSection>RC</tutSection>
+			<tutorName>Tutor C</tutorName>
+			<day>Wednesday</day>
+			<startingTime>10:15</startingTime>
+			<endingTime>11:55</endingTime>
+			<room>H-917</room>
+		</tutorials>
+	</course>
+</courses>

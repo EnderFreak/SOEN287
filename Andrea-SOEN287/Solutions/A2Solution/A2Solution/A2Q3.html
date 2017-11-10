@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- A2Q3.html - Functions in JavaScript
+	 Course: SOEN 287/Fall 2014
+	 Assignment 2
+	 Question 3 (one possible solution)
+	 Written by: Nancy Acemian
+	 -->
+<html lang = "en">
+  <head>
+  <meta charset="utf-8"> 
+  <title> Soen287-A2Q3.html </title>
+  <script type="text/javascript">
+  
+     //Function arrayAverage
+     //----------------------
+     function arrayAverage()
+     {
+	   var input = prompt("Enter the numbers you want the average of seperated by a single space:","none");
+	   if (input != null) {
+	     var arrayOfNumbers = input.split(" ");
+		 if (arrayOfNumbers[0] ==="none" )
+		   document.getElementById('arrayAvgAnswer').innerHTML = "<br />" + "OK but no numbers entered";
+		 else {
+		   var avg = 0, sum =0;
+		   for (var i = 0; i < arrayOfNumbers.length; i++) 
+		     sum += Number(arrayOfNumbers[i]);
+		   avg = sum/arrayOfNumbers.length;
+		   document.getElementById('arrayAvgAnswer').innerHTML = "<br />The array you entered is " + arrayOfNumbers +
+		   "<br />Sum of numbers = " + sum + ", average = " + avg;
+		 }
+		}
+		else
+		  document.getElementById('arrayAvgAnswer').innerHTML = "<br />" + "Cancel pressed";
+	  }
+	
+	// Function counter
+	//-----------------
+	function countNums(arrayOfNumbers) {
+	  var countPos = 0, countNeg = 0, countZero=0;
+	  for (var i = 0; i < arrayOfNumbers.length; i++) 
+		 if(arrayOfNumbers[i] < 0)
+			countNeg++;
+		 else if(arrayOfNumbers[i] > 0)
+			countPos++;
+	     else
+		    countZero++;
+		document.getElementById('counterAnswer').innerHTML = "<br />The array of numbers being considered is: " +
+		 arrayOfNumbers + "<br />There are "+countNeg+" negative numbers, " +countZero + " zeroes and " + countPos + "  positive numbers.";
+		}
+
+	//Function getCurrentDate
+	//----------------------
+    function getCurrentDate() {
+	  var date = new Date();
+	  var weekDay;
+	  //Long way
+	  switch(date.getDay()) {
+	    case 0:
+		  weekDay = "Sunday";
+		  break;
+		case 1:
+		  weekDay = "Monday";
+		  break;
+		case 2:
+		  weekDay = "Tuesday";
+		  break;
+		case 3:
+		  weekDay = "Wednesday";
+		  break;
+		case 4:
+		  weekDay = "Thursday";
+		  break;
+		case 5:
+		  weekDay = "Friday";
+		  break;
+		case 6:
+		  weekDay = "Saturday";
+		  break;
+      }
+	  //Short way
+	  var monthArray = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	  var month= monthArray[date.getMonth()];
+	  document.getElementById('currentDateAnswer').innerHTML = "<br />" + 
+	    "Today is " + weekDay + ', ' + month + " " + date.getDate() +', ' + date.getFullYear();
+	}   
+    // Function last vowel
+    //--------------------
+    function lastVowel(inputString) {
+      // find last vowel
+      var lastA = inputString.toLowerCase().lastIndexOf("a");
+	  var lastE = inputString.toLowerCase().lastIndexOf("e");
+	  var lastI = inputString.toLowerCase().lastIndexOf("i");
+	  var lastO = inputString.toLowerCase().lastIndexOf("o");
+	  var lastU = inputString.toLowerCase().lastIndexOf("u");
+	  var lastVowel = Math.max(lastA, lastE, lastI, lastO, lastU);
+	  document.getElementById('lastVowelAnswer').innerHTML = "<br />The string being looked at is :" + inputString +
+	    "<br />"+ "Last vowel is " + inputString[lastVowel] + " in position " + lastVowel;
+    }
+    // Function reverse String	
+	//------------------------------------------------------
+    function reverseString(inputString) {
+       var reverse="";
+	   for(var i=0; i < inputString.length; i++)
+	      reverse = inputString.charAt(i) + reverse;
+	   document.getElementById('reverseStrAnswer').innerHTML = "<br />" + "String entered: " + 
+	   inputString+ "<br />" + "The reverse of this string is "+ reverse;
+       return reverse;
+    }
+    </script>
+  </head>
+  <body>
+    <h1> SOEN 287 - Assignment #2/ Question 3</h1>
+    <h1>Array Average</h1>
+    <button onclick="arrayAverage()">Array Average</button>
+	<br />
+	<span id="arrayAvgAnswer"></span>
+	<hr />
+	<h1>Counter</h1>
+	<button onclick="countNums([1,2,3,-1,-1,-3,0,0,9])" >Counter</button>
+	<br />
+	<span id="counterAnswer"></span>
+	<hr />
+	<h1>Get Current Date</h1>
+	<button onclick="getCurrentDate()" >Current Date</button>
+	<br />
+	<span id="currentDateAnswer"></span>
+	<hr />
+	<h1>What is last vowel and where is it?</h1>
+	<button onclick="lastVowel('Web programming')" >Last Vowel</button>
+	<br />
+	<span id = "lastVowelAnswer"></span>
+	<hr />
+	<h1>Reverse a string</h1>
+	<button onclick="reverseString('Web programming')" >Reverse</button>
+	<br />
+	<span id="reverseStrAnswer"></span>
+  </body>
+</html>

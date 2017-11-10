@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Nested Lists	</title>
+	<style>
+	<!-- Remove list bullets -->
+	ul.A{list-style:none;}
+	
+	<!-- Bullet empty circle -->
+	ul.b{list-style-type: circle;}
+	
+	<!-- Bullet filled circle -->
+	ul.c{list-style-type: disc;}
+	
+	</style>
+</head>
+
+<!-- Here comes the stuff -->
+<body>
+<h1> Exercise on HTML5 Lists </h1>
+	<p>	term 1 (definition list) </p>
+	
+	<ul class = "A" >
+		<li> term 1 description </li>
+			<ol>
+				<li> ol list item 1 </li>
+				<li> ol list item 2 </li>
+					<ul class = "c" >
+						<li> ul list item 1 </li>
+						<li> ul list item 2 </li>
+					</ul>
+			</ol>
+	</ul>
+	
+	<p> term 2 (definition list) </p>
+	
+	<ul class = "A" >
+		<li> term 2 description </li>
+		<ul class = b >
+			<li> ul list item 3 </li>
+			<li> ul list item 4 </li>
+				<ol>
+					<li> ol list item 3 </li>
+					<li> ol list item 4 </li>
+				</ol>
+			<li> ul list item 5 </li>
+			<li> ul list item 6 </li>
+		</ul>
+	</ul>
+</body>
+</html>

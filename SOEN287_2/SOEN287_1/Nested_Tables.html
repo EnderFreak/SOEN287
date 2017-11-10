@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> Nested Tables </title>
+</head>
+
+<body>
+<h1> Nested Tables </h1>
+
+<table border = "1" style = "width:100%">
+<tr>
+	<!--Below are the headers, row 1 basically -->
+	<th> Header column 1 </th>	<th> Header column 2 </th>	<th> Header column 3 </th>	<th> Header column 4 </th>
+</tr>
+<!-- Second row data goes here -->
+<tr>
+	<td> Row 2 - Item 1 </td>
+	<td> Row 2 - Item 2 </td>
+	<!-- Row 2 crazy nested table -->
+	<td><strong> Row 2: Nested Table 1 </strong>
+			<table border = "1" style = "width:35%">
+			<tr><th>Row 1 header</th><td>item</td></tr>
+			<tr><th>Row 2 header</th><td>item</td></tr>
+			<tr><th>Row 2 header</th><td>item</td></tr>
+			</table>
+	</td>
+	<td> Row 2 - Item 4 </br> A second line </td>
+</tr>
+<!--Here comes row 3 -->
+<tr>
+<td><strong> Row 3: Nested Table 2 </strong>
+<!--Here comes crazy table inside table 2.0 -->
+<table border = "1" style = "width = 35%">
+	<tr><th>Row 1 Header</th><td>item</td></tr>
+	<tr><th>Row 2 Header</th><td>item</td></tr>
+</table>
+</td>
+<td> Row 3 - Item 2 </td>
+<td> There shouldn't be anything here, why is there something here</td>
+<td> Row 3 - Item 3 </td>
+
+
+
+
+
+
+
+</body>
+
+</html>

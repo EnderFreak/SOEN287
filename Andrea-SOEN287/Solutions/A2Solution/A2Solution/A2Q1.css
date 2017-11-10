@@ -1,0 +1,8 @@
+body {background-image: url("images/sunflower.jpg");}
+			
+ol {list-style-type:armenian; color:SlateBlue ;}
+ol ul {list-style-type:disc; color:crimson;}
+ol ul ul{list-style-type:square; color:MediumOrchid;}
+h2 {border: 5px solid darkMagenta; color:darkMagenta; padding:5px;}
+.pad5px (padding: 5px;}
+.thick { font-weight: bold;} 

@@ -1,0 +1,39 @@
+<!-- A1Q4Schema.xml - XML Schema
+	 Course: SOEN 287/Fall 2014
+	 Assignment 1
+	 Question 4 (solution)
+	 Written by: Nancy Acemian
+	 -->
+<?xml version="1.0" encoding="utf-16"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="courses">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" name="course">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="courseCode" type="xsd:string" />
+              <xsd:element name="courseNumber" type="xsd:int" />
+              <xsd:element name="term" type="xsd:string" />
+              <xsd:element name="year" type="xsd:int" />
+              <xsd:element name="instructor" type="xsd:string" />
+              <xsd:element name="classroom" type="xsd:string" />
+              <xsd:element maxOccurs="unbounded" name="tutorials">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="tutSection" type="xsd:string" />
+                    <xsd:element name="tutorName" type="xsd:string" />
+                    <xsd:element name="day" type="xsd:string" />
+                    <xsd:element name="startingTime" type="xsd:dateTime" />
+                    <xsd:element name="endingTime" type="xsd:dateTime" />
+                    <xsd:element name="room" type="xsd:string" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

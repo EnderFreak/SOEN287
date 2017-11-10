@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Nested Tables</title>
+</head>
+
+<body>
+<h1>Nested Tables</h1>
+<table width="0%" border="2">
+  <tr> <!-- Headers -->
+    <th scope="col">Header Column 1</th>
+    <th scope="col">Header Column 2</th>
+    <th  scope="col">Header Column 3</th>
+    <th  scope="col">Header Column 4</th>
+  </tr>
+  <tr > <!-- Row 2 -->
+    <td>Row 2 - Item 1</td>
+    <td>Row 2 - Item 2</td>
+    <td rowspan="2"><p><strong>Row 2: Nested Table 1</strong></p>
+      <table width="0%" border="2">
+        <tr>
+          <th scope="row">Row 1 Header</th>
+          <td>item</td>
+        </tr>
+        <tr>
+          <th scope="row">Row 2 Header</th>
+          <td>item</td>
+        </tr>
+        <tr>
+          <th scope="row">Row 2 Header</th>
+          <td>item</td>
+        </tr>
+      </table>   
+	  </td>
+    <td><p>Row 2 - Item 4</p>
+    <p>A second line</p></td>
+  </tr>
+  <tr> <!-- Row 3 -->
+    <td><p><strong>Row 3:Nested Table 2</strong></p>
+      <table width="0%" border="2">
+        <tr>
+          <th scope="row">Row 1 Header</th>
+          <td>item</td>
+        </tr>
+        <tr>
+          <th scope="row">Row 2 Header</th>
+          <td>item</td>
+        </tr>
+      </table>      </td>
+    <td>Row 3 - Item 2</td>
+    <td rowspan="2">Row 3 - Item 3</td>
+  </tr>
+  <tr> <!--Row 4 -->
+    <td>Row 4 - Item 1</td>
+    <td>Row 4 - Item 2</td>
+    <td>Row 4 - Item 3</td>
+  </tr>
+  <tr> <!-- Row 4 -->
+    <td colspan="4">Row 5 - Last row of outer table</td>
+  </tr>
+</table>
+
+</body>
+</html>

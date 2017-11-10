@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Music lovers</title>
+
+<style  type="text/css">
+	#personalInfo{
+		  background-color:#90e5e5;
+		  border:  1px solid #072de7;
+	}
+	
+	#surveyQuestions{
+		  background-color:#ee91e5;
+		  border:  1px solid #74070d;
+	}
+	
+	#LpersonalInfo{
+		color:#072de7;
+	}
+	
+	#LsurveyQuestions{
+		color:#74070d;
+	}
+	
+	label{
+		font-weight:bold;
+	}
+	
+
+</style>
+</head>
+
+<body>
+<table width="0%" border="0">
+  <tr>
+    <td>Music Lover's Suvey</td>
+    <td>
+		<a href= "http://www.clipartpanda.com/clipart_images/music-note-png-37859415">
+		<img src="C:/Users/Versh/Documents/vershna/music.jpg" alt="" width="100" height="60" />
+		</a></td>
+  </tr>
+</table>
+<form id="form1" name="form1" method="post" action="page.html">
+<fieldset id = "personalInfo">
+  <legend id = "LpersonalInfo">Music Lover's Personal Information</legend>
+    <p>
+      <label>First Name
+      <input type="text" name="firstName" id="firstName" />
+      </label>
+  </p>
+    <p>
+      <label>Family Name
+      <input type="text" name="familyName" id="familyName" />
+      </label>
+    </p>
+    <p><label>Gender: </label>
+      <input type="radio" name="radio" id="female" value="female" />
+      Female
+      <input type="radio" name="radio" id="male" value="male" />
+      Male
+    </p>
+    <p>
+      <label>What age category are you from?
+      <select name="ageCategory" id="ageCategory">
+      	<option value="lessthan18">Less than 18</option>
+		<option value="equal18">18</option>
+		<option value="morethan18">More than 18</option>
+      </select>
+      </label>
+    </p>
+    <p>
+    	<label> Email
+       	<input type="email" name="email">
+      </label>
+    </p>
+</fieldset>
+
+<fieldset id = "surveyQuestions">
+<legend id = "LsurveyQuestions">Survey Questions</legend>
+<p>
+  <label>Which type of music do you listen to?(Pick as many as apply)</label><br/>
+  
+  <input name="blues" type="checkbox" value="Blues"/>
+  Blues
+  <input name="blues" type="checkbox" value="classical"/>
+  Classical Music
+  <input name="blues" type="checkbox" value="electronic"/>
+  Electronic Music<br/>
+  <input name="blues" type="checkbox" value="hiphoprap"/>
+  Hip Hop/Rap
+  <input name="blues" type="checkbox" value="pop"/>
+  Pop (Popular Music)<br/>
+  <input name="blues" type="checkbox" value="other"/>
+  Other</p>
+
+<p><label>List your 3 favorite artists/bands:</label><br/>
+
+  <input type="text" name="artist1" id="artist1" />
+  <input type="text" name="artist2" id="artist2" />
+  <input type="text" name="artist3" id="artist3" />
+</p>
+
+<p><label>If your were to win tickets which show would you like 2 tickets to?</label><br/>
+  
+    <input type="radio" name="radio" id="brit" value="brit" />
+      BRIT FLOYD(March 24,2016)
+      
+      <input type="radio" name="radio" id="iron" value="iron" />
+      IRON MAIDEN(April 1,2016)
+      
+      <input type="radio" name="radio" id="janet" value="janet" />
+      JANET JACKSON(June 17,2016)
+      
+      <input type="radio" name="radio" id="adele" value="adele" />
+      ADELE(September 30,2016)
+</p>
+</fieldset>
+</form>
+
+<p><br/>
+  Thank you for taking the time to fill our survey!</p>
+<p>  
+  <input name="submit" type="submit" value="Submit" />
+  <input name="reset" type="reset" value="Reset" />
+</p>
+</body>
+</html>
+
